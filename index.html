@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click Patinhas - Estúdio Pet</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="menu">
+        <div class="logo">
+            <h1>Click Patinhas</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="sobre" class="principal">
+        <h2>Sobre Nós</h2>
+        <p>Somos um estúdio de fotografia pet em Brasília, dedicado a transformar os momentos especiais do seu melhor amigo em memórias inesquecíveis.</p>
+        <img src="petamarelo.png" alt="Pet feliz no estúdio" class="imagem-sobre">
+    </section>
+
+    <section id="galeria">
+        <h2>Galeria</h2>
+        <div class="galeria-container">
+            <div class="galeria-item" data-title="Pet A" data-description="Um momento especial merece ser lembrado.">
+                <img src="cachorro.png" alt="cachorro">
+            </div>
+            <div class="galeria-item" data-title="Pet B" data-description="Cada lembrança merece ser celebrada.">
+                <img src="cat.png" alt="gato">
+            </div>
+            <div class="galeria-item" data-title="Pet C" data-description="Um momento inesquecível que merece ser revivido.">
+                <img src="dog.png" alt="cachorro">
+            </div>
+        </div>
+    </section>
+
+    <section id="instagram">
+        <h2 class="titulo-section">Siga-nos no Instagram</h2>
+        <p class="descricao-instagram">Acompanhe nossas aventuras fotográficas e veja como transformamos momentos únicos em memórias eternas.</p>
+        <div class="instagram-feed">
+            <a href="https://www.instagram.com/p/CxGk1V6xUoU/?img_index=1" target="_blank" class="instagram-link">
+                <img src="post1.png" alt="Post do Instagram 1">
+            </a>
+            <a href="https://www.instagram.com/p/CxbC-ZeRU2r/" target="_blank" class="instagram-link">
+                <img src="post2.png" alt="Post do Instagram 2">
+            </a>
+            <a href="https://www.instagram.com/p/CxGlSFmRU3-/" target="_blank" class="instagram-link">
+                <img src="post3.png" alt="Post do Instagram 3">
+            </a>
+        </div>
+        <div class="instagram-btn">
+            <a href="https://www.instagram.com/click.patinhas/" target="_blank" class="btn-cta">Ver Mais</a>
+        </div>
+    </section>
+    
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>Entre em contato e agende o ensaio perfeito para o seu pet!</p>
+        <form id="form-contato">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Diana Bispo - Todos os direitos reservados.</p>
+    </footer>
+
+    <div id="modal">
+        <div class="modal-content">
+            <span id="close-modal">&times;</span>
+            <h3 id="modal-title"></h3>
+            <p id="modal-description"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
